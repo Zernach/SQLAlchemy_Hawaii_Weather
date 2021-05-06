@@ -54,7 +54,7 @@ def precipitation():
     # Connect to database
     session = Session(engine)
 
-    # YOUR JOB: DEFINE THE precipitation_date VARIABLE
+    # YOUR JOB: DEFINE THE precipitation_data VARIABLE
 
     # Disconnect from database
     session.close()
@@ -109,7 +109,7 @@ def start_and_end(start='MM-DD-YYYY', end='MM-DD-YYYY'):
     session.close()
     return jsonify(temps_filtered_by_date)
 
-
+# Run the Flask app that was created at the top of this file --> app = Flask(__name__)
 ################################################################
 if __name__ == '__main__':
-    app.run(debug=True) # set to false if deploying to live website server
+    app.run(debug=True) # set to false if deploying to a live website server (such as Google Cloud, Heroku, or AWS Elastic Beanstaulk)

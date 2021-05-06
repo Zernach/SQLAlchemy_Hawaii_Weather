@@ -1,2 +1,3 @@
 # SQLAlchemy_Hawaii_Weather
-Includes starter code to help students on my roster pickup this assignment more quickly.
+
+This repository includes starter code to help students on my roster more quickly pickup this assignment. Upon download, replace this section of the ReadMe with your own thoroughly-written ReadMe — including screenshots, images, and/or custom screen-recording videos converted into GIF files. All ReadMe's are written using Markdown, so (here's a Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]. 

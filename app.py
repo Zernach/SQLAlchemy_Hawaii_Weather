@@ -1,5 +1,5 @@
 # Import dependencies
-from flask import Flask, render_template, request, redirect, jsonify
+from flask import Flask, request, redirect, jsonify
 import numpy as np 
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
@@ -97,8 +97,6 @@ def tobs():
 # When given the start only, calculate `TMIN`, `TAVG`, and `TMAX` for all dates greater than and equal to the start date.
 # When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
 def start_and_end(start='MM-DD-YYYY', end='MM-DD-YYYY'):
-    # Create session
-    session = Session(engine)
     
     # Connect to database
     session = Session(engine)

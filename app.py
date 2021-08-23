@@ -38,10 +38,10 @@ def home():
         f"<a href='/api/v1.0/tobs'>/api/v1.0/tobs</a><br/><br/><br/><br/>"
 
         f"<h3>📆 SPECIFIED START DATE:</h3>"
-        f"/api/v1.0/temp/MM-DD-YYYY<br/><br/><br/><br/>"
+        f"/api/v1.0/temp/YYYY-MM-DD<br/><br/><br/><br/>"
 
         f"<h3>📆 SPECIFIED START DATE & END DATE:</h3>"
-        f"/api/v1.0/temp/MM-DD-YYYY/MM-DD-YYYY"
+        f"/api/v1.0/temp/YYYY-MM-DD/YYYY-MM-DD"
     )
     return homepageHTML
 
@@ -96,7 +96,7 @@ def tobs():
 # Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
 # When given the start only, calculate `TMIN`, `TAVG`, and `TMAX` for all dates greater than and equal to the start date.
 # When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
-def start_and_end(start='MM-DD-YYYY', end='MM-DD-YYYY'):
+def start_and_end(start='YYYY-MM-DD', end='YYYY-MM-DD'):
     
     # Connect to database
     session = Session(engine)
